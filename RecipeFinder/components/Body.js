@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import ShimmerUI from "./ShimmerUI";
-import { Categories, Areas } from "../utils/Data";
+import { Categories, Areas, Youtubelogo } from "../utils/Data";
 import Modal from "react-modal";
+
 Modal.setAppElement("#root");
 const Body = () => {
   const [searchinput, setsearchinput] = useState("");
@@ -84,6 +85,7 @@ const Body = () => {
         </button>
       </div>
       <div id="filter-body">
+        <div>
         <label>Filter By Category: </label>
         <select className="filterdropdown" onChange={(e) => filter(e)}>
           {Categories.map((category, index) => (
@@ -91,7 +93,8 @@ const Body = () => {
               {category}
             </option>
           ))}
-        </select>
+        </select></div>
+        <div>
         <label> Filter By Country: </label>
         <select className="filterdropdown" onChange={(e) => filter(e)}>
           {Areas.map((area, index) => (
@@ -100,33 +103,39 @@ const Body = () => {
             </option>
           ))}
         </select>
+        </div>
       </div>
       {displayrecipes.length == 0 && loading == true ? (
         <ShimmerUI />
       ) : displayrecipes.length == 0 && loading == false ? (
-        <p id="norecipe">No Recipe Found</p>
+        <p id="norecipe">No Recipe Found 🍽️</p>
       ) : (
         <div>
           <div id="display-body">
             {displayrecipes.map((recipe, index) => (
               <div id="recipe-card" key={index}>
+                <p id="recipe-name">{recipe.strMeal}</p>
                 <img id="recipe-image" src={recipe.strMealThumb}></img>
-                <p
-                  id="recipe-name"
+                <div id="recipe-details">
+                  <p id="recipe-area">{recipe.strArea}</p>
+                  <p id="recipe-category">{recipe.strCategory}</p>
+                </div>
+               
+                <button
+                  id="details-btn"
                   onClick={() => {
                     setModalIsOpen(true);
                     modelrecipefn(recipe);
                   }}
                 >
-                  {recipe.strMeal}
-                </p>
-                <div id="recipe-details">
-                  <p id="recipe-area">{recipe.strArea}</p>
-                  <p id="recipe-category">{recipe.strCategory}</p>
-                </div>
+                  See Complete Recipe
+                </button>
                 <button id="recipe-youtube">
                   <a href={recipe.strYoutube} target="_blank">
-                    Watch Recipe
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png"
+                      style={{ height: "30px" }}
+                    ></img>
                   </a>
                 </button>
               </div>
@@ -148,11 +157,6 @@ const Body = () => {
           <p>
             {" "}
             <strong>Country :</strong> {modalrecipe.strArea}
-          </p>
-          <p>
-            {" "}
-            <strong>Instructions :</strong>
-            {modalrecipe.strInstructions}
           </p>
           <table id="table">
             <thead>
@@ -177,6 +181,11 @@ const Body = () => {
               })}
             </tbody>
           </table>
+          <p>
+            {" "}
+            <strong>Instructions :</strong>
+            {modalrecipe.strInstructions}
+          </p>
         </div>
       </Modal>
     </div>

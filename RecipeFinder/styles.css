@@ -6,15 +6,17 @@
   margin-bottom: 80px;
 }
 body {
-  background: #b2d8d6;
+  background: white;
+  
 }
 #search-body {
   text-align: center;
   position: sticky;
   top: 0;
   float: center;
-  background-color: #b2d8d6;
+background-color: white;
   padding-top: 20px;
+  z-index: 1;
 }
 #search-input {
   width: 40%;
@@ -33,66 +35,64 @@ body {
   color: gray;
 }
 #display-body {
-  margin-left: 10%;
-  margin-right: 10%;
+ 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 1.5rem;
+ 
+
+  
 }
 #recipe-card {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-weight: bolder;
-  background-color: #f4dfd1;
-  border: 1px solid #ccc;
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   border-radius: 20px;
+    gap: 20px;
+    background-color:aliceblue;
+    z-index: 0;
+    padding: 20px;
 }
 #recipe-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
   transition: all 0.3s ease;
+  z-index: 0;
 }
 #recipe-name {
   margin-top: 10px;
-  font-size: 18px;
-  height: 60px;
-  overflow: hidden;
+  font-size: 32px;
+    overflow: hidden;
   text-overflow: ellipsis;
   font-family: "Mandali", sans-serif;
   border: 0px solid black;
   align-content: center;
-  background-color: #f7d488;
-  cursor: pointer;
+ 
+  margin-bottom: 0px;
 }
 #recipe-image {
-  margin-top: 10%;
-  border-radius: 20px;
-  height: 200px;
+    border-radius: 20px;
+  height: 300px;
+  width: 100%;
+
   object-fit: cover;
 }
 #recipe-details {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  font-weight: normal;
-  margin-top: -10px;
+   font-weight: normal;
+ justify-content: space-evenly;
+
+width: 100%;
 }
-#recipe-youtube {
-  margin-top: 10px;
-  font-size: 18px;
-  height: 60px;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: "Mandali", sans-serif;
-  border: 0px solid black;
-  align-content: center;
-  background-color: #f7d488;
-  cursor: pointer;
-  color: black;
-}
+ #recipe-youtube {
+ margin-left: 2px;
+ border: 0px ;
+
+  
+} 
 #recipe-image-shimmer {
   margin-top: 10%;
   border-radius: 20px;
@@ -105,7 +105,7 @@ body {
 #search-btn {
   border: 1px solid black;
   border-radius: 20px;
-  background-color: yellow;
+  background-color:aliceblue;
   margin-left: 5px;
 }
 #search-btn-body {
@@ -118,8 +118,13 @@ body {
   position: sticky;
   top: 90;
   float: center;
-  background-color: #b2d8d6;
+  background-color: white;
+  z-index: 1;
+  padding-bottom: 10px;
+display: flex;
+flex-direction: row;
   padding-top: 20px;
+  justify-content: center;
 }
 .filterdropdown {
   margin-left: 10px;
@@ -130,7 +135,8 @@ body {
 #modal-body {
   text-align: center;
   font-family: "Mandali", sans-serif;
-  background-color: #f4dfd1;
+  background-color:aliceblue;
+  z-index: 2;
 }
 #modal-img {
   width: 50%;
@@ -167,4 +173,18 @@ body {
   font-weight: bolder;
   font-family: "Mandali", sans-serif;
   color: red;
+}
+:modal body {
+  background-color: #f7d488;
+}
+#details-btn{
+  background-color: black;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.ReactModal__Overlay {
+  z-index: 2;
 }
