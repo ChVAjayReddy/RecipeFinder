@@ -1,0 +1,51 @@
+#heading {
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+#p {
+  text-align: center;
+  color: #00f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#main {
+  text-align: center;
+  border-radius: 20px;
+  height: 80px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #0000004d;
+}
+
+#main input, button {
+  border-radius: 20px;
+  height: 30px;
+  margin: 20px;
+}
+
+#list {
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #0000004d;
+}
+
+#display {
+  border-radius: 20px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+  display: flex;
+  box-shadow: 5px 5px 10px #0000004d;
+}
+
+#display:hover {
+  border: 2px solid #000;
+}
+
+.dis {
+  width: 250px;
+  margin: 10px 20px 10px 10px;
+}
+/*# sourceMappingURL=React.511f7b06.css.map */

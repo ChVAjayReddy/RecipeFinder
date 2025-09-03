@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;;AAMA","sources":["projects/todostyles.css"],"sourcesContent":["#task-list{\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 10px;\r\n    border: 1px solid #ccc;\r\n}\r\n.listoftasks{\r\n    display: flex;\r\n    flex-direction: row;\r\n\r\n}\r\n"],"names":[],"version":3,"file":"todo.7b6c77ba.css.map","sourceRoot":"/__parcel_source_root/"}

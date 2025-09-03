@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["projects/freeCodeCamp/Accordion/styles.css"],"sourcesContent":["#header{\r\n    border: solid 2px ;\r\n    height: 80px;\r\n    border-radius: 20px;\r\n    text-align: center;\r\n        \r\n}"],"names":[],"version":3,"file":"React.e62dd46f.css.map","sourceRoot":"/__parcel_source_root/"}

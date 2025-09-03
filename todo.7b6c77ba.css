@@ -1,0 +1,12 @@
+#task-list {
+  border: 1px solid #ccc;
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.listoftasks {
+  flex-direction: row;
+  display: flex;
+}
+/*# sourceMappingURL=todo.7b6c77ba.css.map */

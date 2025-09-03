@@ -1,0 +1,42 @@
+.app-header {
+  border: 3px solid #ccc;
+  display: flex;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+li {
+  padding: 80px;
+  display: inline-block;
+}
+
+.restaurant-card {
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.restaurant-card:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+}
+
+.rest-container {
+  flex-flow: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+#footer1 {
+  text-align: center;
+  border: 3px solid #ccc;
+  justify-content: center;
+  display: flex;
+}
+/*# sourceMappingURL=React.1303bb05.css.map */

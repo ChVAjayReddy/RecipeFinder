@@ -1,0 +1,69 @@
+#header {
+  text-align: center;
+  align-content: center;
+  height: 80px;
+  margin-top: 0;
+}
+
+#body {
+  background-color: #fff;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#contact {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 350px;
+  height: fit-content;
+  margin: 10px;
+  box-shadow: 0 0 16px 2px #0006;
+}
+
+#contact:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+#name {
+  color: #fff;
+  background-color: gray;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  height: 20%;
+}
+
+button:hover {
+  border: 2px solid #000;
+}
+
+#edit {
+  background-color: #e9f17f;
+}
+
+#delete {
+  background-color: red;
+}
+
+#header img {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 300px;
+}
+
+#footer {
+  text-align: center;
+  background-color: #eb7ca1;
+  align-content: center;
+  width: 99%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+}
+/*# sourceMappingURL=React.313b05f5.css.map */
