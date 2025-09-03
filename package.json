@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "homepage": "https://chvajayreddy.github.io/RecipeFinder/",
+  "homepage": "https://chvajayreddy.github.io/RecipeFinder",
   "description": "React by Ch V Ajay Reddy",
   "scripts": {
     "start": "parcel index.html",
